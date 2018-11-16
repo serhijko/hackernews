@@ -1,3 +1,7 @@
+# The Road to Learn React
+
+The application I build when I read the book [The Road to Learn React](https://www.robinwieruch.de/the-road-to-learn-react/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
