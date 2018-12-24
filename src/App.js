@@ -184,7 +184,7 @@ const smallColumn = {
   width: '10%',
 };
 
-const Table = ({ list, pattern, onDismiss }) =>
+const Table = ({ list, onDismiss }) =>
   <div className="table">
     {list.map(item =>
       <div key={item.objectID} className="table-row">
