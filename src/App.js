@@ -127,7 +127,7 @@ class App extends Component {
 
     return (
       <div className="page">
-        <div className="interations">
+        <div className="interactions">
           <Search
             value={searchTerm}
             onChange={this.onSearchChange}
@@ -145,7 +145,7 @@ class App extends Component {
             onDismiss={this.onDismiss}
           />
         }
-        <div className="interations">
+        <div className="interactions">
           <Button onClick={() => this.fetchSearchTopStories(searchKey, page + 1)}>
             More
           </Button>
