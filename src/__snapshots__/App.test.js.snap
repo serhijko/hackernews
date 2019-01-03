@@ -61,19 +61,6 @@ exports[`Search has a valid snapshot 1`] = `
 </form>
 `;
 
-exports[`Search has a valid snapshot 2`] = `
-<form>
-  <input
-    type="text"
-  />
-  <button
-    type="submit"
-  >
-    Search
-  </button>
-</form>
-`;
-
 exports[`Table has a valid snapshot 1`] = `
 <div
   className="table"
