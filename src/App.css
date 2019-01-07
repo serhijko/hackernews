@@ -61,3 +61,23 @@
   border-radius: 0;
   border-bottom: 1px solid #38BB6C;
 }
+
+.loading {
+  font-size: 3em;
+  color: Tomato;
+  animation-name: loading-rotation;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loading-rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

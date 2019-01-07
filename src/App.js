@@ -236,7 +236,12 @@ const Button = ({
   </button>
 
 const Loading = () =>
-  <div>Loading ...</div>
+  <div>
+    <span>Loading ...</span>
+    <div className="loading">
+      <i className="fas fa-spinner"></i>
+    </div>
+  </div>
 
 export default App;
 
