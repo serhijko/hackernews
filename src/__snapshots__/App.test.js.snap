@@ -151,6 +151,9 @@ exports[`Table has a valid snapshot 1`] = `
         type="button"
       >
         Title
+        <i
+          class="fas fa-arrow-alt-circle-down"
+        />
       </button>
     </span>
     <span

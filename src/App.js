@@ -235,6 +235,7 @@ const Table = ({
             sortKey={'TITLE'}
             onSort={onSort}
             activeSortKey={sortKey}
+            isSortReverse={isSortReverse}
           >
             Title
           </Sort>
@@ -244,6 +245,7 @@ const Table = ({
             sortKey={'AUTHOR'}
             onSort={onSort}
             activeSortKey={sortKey}
+            isSortReverse={isSortReverse}
           >
             Author
           </Sort>
@@ -253,6 +255,7 @@ const Table = ({
             sortKey={'COMMENTS'}
             onSort={onSort}
             activeSortKey={sortKey}
+            isSortReverse={!isSortReverse}
           >
             Comments
           </Sort>
@@ -262,6 +265,7 @@ const Table = ({
             sortKey={'POINTS'}
             onSort={onSort}
             activeSortKey={sortKey}
+            isSortReverse={!isSortReverse}
           >
             Points
           </Sort>
@@ -302,6 +306,7 @@ const Sort = ({
   sortKey,
   activeSortKey,
   onSort,
+  isSortReverse,
   children
 }) => {
   const sortClass = classNames(
@@ -313,8 +318,15 @@ const Sort = ({
     <Button
       onClick={() => onSort(sortKey)}
       className={sortClass}
+      isSortReverse={isSortReverse}
     >
       {children}
+      { sortKey === activeSortKey
+        ? ( !isSortReverse
+          ? <i class="fas fa-arrow-alt-circle-down"></i>
+          : <i class="far fa-arrow-alt-circle-up"></i> )
+        : null
+      }
     </Button>
   );
 }
